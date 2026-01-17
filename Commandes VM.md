@@ -21,3 +21,15 @@ sr0 => Lecteur CD
 
 Créer nouvelle partition:
 - *sudo fdisk /dev/sda?* 
+
+/dev/sda1  → primaire
+/dev/sda2  → étendue
+    ├── /dev/sda5  → logique
+    ├── /dev/sda6  → logique
+    └── /dev/sda7  → logique
+
+Pour crypter installer cryptsetup:
+- *sudo apt install cryptsetup*
+
+
+
