@@ -21,6 +21,7 @@ sr0 => Lecteur CD
 
 Créer nouvelle partition:
 - *sudo fdisk /dev/sda?* 
+- cfdisk /dev/sdb?
 
 /dev/sda1  → primaire
 /dev/sda2  → étendue
@@ -31,5 +32,13 @@ Créer nouvelle partition:
 Pour crypter installer cryptsetup:
 - *sudo apt install cryptsetup*
 
+luksFormat => Linux Unified Key Setup
+
+Donner droit root => *sudo -i*
+
+Mettre un mdp a la partition crypte:
+- cryptsetup --verify-passphrase luksFormat /dev/sdb?
+Ouvrir:
+- cryptsetup luksOpen /dev/sdb?
 
 
