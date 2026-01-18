@@ -8,6 +8,7 @@
 	
 -   *sudo swapon --show* (voir les partions swap)
 -  *sudo swapoff /dev/sda?* (enleve le swap) 
+- Efface les metadonné => *sudo wipefs -a /dev/sda5*
 
 Afficher la table des partitions:
 - *sudo fdisk -l*
@@ -40,5 +41,31 @@ Mettre un mdp a la partition crypte:
 - cryptsetup --verify-passphrase luksFormat /dev/sdb?
 Ouvrir:
 - cryptsetup luksOpen /dev/sdb?
+
+**Chiffrer sda5 avec LUKS
+- 'sudo cryptsetup luksFormat /dev/sda5'
+- 'sudo cryptsetup open /dev/sda5 name'
+
+**Creer LVM a l'interieur**
+- Initialiser le volume physique LVM -> *sudo pvcreate /dev/mapper/cryptlvm*
+
+- Creer le groupe de volume -> *sudo vgcreate vg0 /dev/mapper/cryptlvm*
+
+- Creer les volumes logiques -> *sudo lvcreate -L 20G -n root vg0
+sudo lvcreate -L 4G -n swap vg0
+sudo lvcreate -l 100%FREE -n home vg0*
+
+- Formater les volumes -> *sudo mkfs.ext4 /dev/vg0/root
+sudo mkfs.ext4 /dev/vg0/home
+sudo mkswap /dev/vg0/swap*
+
+**Creer les repertoires de montages**
+- *sudo mkdir -p /home* -> *sudo mount /dev/vg0/root /home*
+
+
+
+
+
+
 
 
