@@ -14,3 +14,10 @@ sda2 => partition étendu
 sda5 => partition logique
 sda5_crypt => conteneur LUKS
 name--vg- => volumes logiques LVM
+
+
+**SWAP**
+Evite les crashs quand la RAM est sature
+
+
+
