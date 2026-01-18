@@ -31,6 +31,10 @@ Strong password policy > 12 characters (combinaison aA9!)
 *adduser name*
 autoriser l'utilisation de sudo -> *sudo usermod -aG sudo name*
 voir utilisateur connecte -> *who*
+liste utilisateur -> *cut -d: -f1 /etc/passwd*
+supprimmer user -> *userdel name*
+
+
 
 
 

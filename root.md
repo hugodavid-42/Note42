@@ -1,1 +1,0 @@
-aller en root -> su -
