@@ -28,7 +28,7 @@ fichier source -> */etc/hosts*
 Strong password policy > 12 characters (combinaison aA9!)
 
 **Ajouter utilisateur**
-*adduser name*
+ajout utilisateur -> *adduser name*
 autoriser l'utilisation de sudo -> *sudo usermod -aG sudo name*
 voir utilisateur connecte -> *who*
 liste utilisateur -> *cut -d: -f1 /etc/passwd*
