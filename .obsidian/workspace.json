@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Note.md",
+                "file": "root et SUDO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Note"
+              "title": "root et SUDO"
             }
           }
         ],
@@ -248,19 +248,20 @@
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
       "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
   "active": "161b7f481ad84723",
   "lastOpenFiles": [
-    "root et SUDO.md",
-    "Note.md",
     "Securite.md",
     "Creation OS en Manuel.md",
     "Commandes VM.md",
+    "Structure Partitions.md",
+    "root et SUDO.md",
+    "Note.md",
     "Autre commandes.md",
     "SSH.md",
-    "Structure Partitions.md",
     "UFW.md",
     "AppArmor.md",
     "Sans titre.canvas",

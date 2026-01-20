@@ -37,4 +37,11 @@ Exemple:
 user ALL=(ALL) /usr/bin/nano /etc/hosts
 
 
+**Command wall**
+Afficher texte ou script a tout les user
+
+**Crontab**
+Programmer l'apparition de msg
+
+
 
