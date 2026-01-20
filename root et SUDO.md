@@ -39,9 +39,14 @@ user ALL=(ALL) /usr/bin/nano /etc/hosts
 
 **Command wall**
 Afficher texte ou script a tout les user
+activer msg wall => *mesg y*
+desactiver => *mesg n*
 
 **Crontab**
 Programmer l'apparition de msg
+*crontab -e*
+
+
 
 
 
